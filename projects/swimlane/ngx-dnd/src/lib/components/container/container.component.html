@@ -5,6 +5,7 @@
   [copy]="copy"
   [ngClass]="{ 'gu-empty': !model?.length }"
   [removeOnSpill]="removeOnSpill"
+  [direction]="direction"
   class='ngx-dnd-container'>
   <ng-container *ngIf="model">
     <ng-container *ngFor="let item of model">

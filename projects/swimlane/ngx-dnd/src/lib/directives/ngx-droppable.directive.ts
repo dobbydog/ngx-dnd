@@ -27,6 +27,7 @@ export class DroppableDirective implements OnInit, OnDestroy, AfterViewInit {
   @Input() model: any;
   @Input() copy = false;
   @Input() removeOnSpill = false;
+  @Input() direction = 'vertical';
   @Input() ngxDroppable: string;
 
   @Output() drop: EventEmitter<any> = new EventEmitter<any>();
