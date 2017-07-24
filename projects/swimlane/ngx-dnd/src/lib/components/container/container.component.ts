@@ -33,6 +33,7 @@ export class ContainerComponent implements OnInit, AfterViewInit {
   @Input() model: any;
   @Input() copy = false;
   @Input() removeOnSpill = false;
+  @Input() direction = 'vertical';
   @Input() droppableItemClass: string | ((o: any) => any);
 
   @Input() dropZone = `@@DefaultDropZone-${getNextId()}@@`;

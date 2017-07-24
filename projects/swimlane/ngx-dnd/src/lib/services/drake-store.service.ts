@@ -110,6 +110,7 @@ export class DrakeStoreService {
       if (this.droppableMap.has(source)) {
         const sourceComponent = this.droppableMap.get(source);
         this.dragulaOptions.removeOnSpill = sourceComponent.removeOnSpill;
+        this.dragulaOptions.direction = sourceComponent.direction;
 
         sourceComponent.drag.emit({
           type: 'drag',
