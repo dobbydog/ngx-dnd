@@ -63,6 +63,34 @@
       </div>
     </ngx-section>
 
+    <ngx-section class="shadow" sectionTitle="Sortable - No model - Horizontal">
+      <div fxLayout="row nowrap" fxFill>
+        <div fxFlex="50%">
+          <div class='wrapper'>
+            <div class="ngx-dnd-container" ngxDroppable direction="horizontal" fxLayout="row">
+              <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 1</div>
+              <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 2</div>
+              <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 3</div>
+              <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 4</div>
+            </div>
+
+          </div>
+        </div>
+        <div fxFlex="50%">
+          <h3>Using Directives</h3>
+          <pre><code ngNonBindable><![CDATA[<div class="ngx-dnd-container" ngxDroppable direction="horizontal" fxLayout="row">
+  <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 1</div>
+  <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 2</div>
+  <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 3</div>
+  <div fxFlex="25" class="ngx-dnd-item" ngxDraggable>Item 4</div>
+</div>]]></code></pre>
+
+          <h3>Using Components</h3>
+          <pre><code ngNonBindable><![CDATA[<ngx-dnd-container [moves]="canMove" [model]="['Item 1 - Move Disabled', 'Item 2', 'Item 3']" direction="horizontal"></ngx-dnd-container>]]></code></pre>
+        </div>
+      </div>
+    </ngx-section>
+
     <ngx-section class="shadow" sectionTitle="Simple Sortable - from array model">
       <div fxLayout="row nowrap" fxFill>
         <div fxFlex="50%">
